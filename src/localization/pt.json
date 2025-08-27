@@ -1,0 +1,169 @@
+{
+  "app": {
+    "title": "DATASYNC Market Tool",
+    "subtitle": "Ferramenta de Análise de Mercado Financeiro",
+    "version": "v2.0.0",
+    "developer": "Desenvolvido por Guilherme Rosental",
+    "disclaimer": "Esta ferramenta é apenas para fins educacionais. Não constitui aconselhamento financeiro."
+  },
+  "menu": {
+    "main": {
+      "title": "MENU PRINCIPAL",
+      "language": "🌐 Selecionar Idioma",
+      "market_overview": "📈 Visão Geral do Mercado",
+      "stock_analysis": "📊 Análise de Ações",
+      "portfolio": "💼 Gestão de Portfólio",
+      "technical_analysis": "📉 Análise Técnica",
+      "currency": "💱 Conversor de Moedas",
+      "news": "📰 Notícias do Mercado",
+      "web_interface": "🌐 Interface Web",
+      "exit": "❌ Sair"
+    },
+    "language": {
+      "title": "SELEÇÃO DE IDIOMA",
+      "current": "Idioma atual: {language}",
+      "select": "Selecione um idioma:",
+      "portuguese": "Português",
+      "english": "English",
+      "spanish": "Español",
+      "back": "Voltar"
+    },
+    "portfolio": {
+      "title": "GESTÃO DE PORTFÓLIO",
+      "create": "📝 Criar Novo Portfólio",
+      "analyze": "📊 Analisar Portfólio",
+      "optimize": "⚡ Otimizar Portfólio",
+      "compare": "🔍 Comparar Ativos",
+      "back": "🔙 Voltar"
+    }
+  },
+  "input": {
+    "choose_option": "Escolha uma opção: ",
+    "enter_symbol": "Digite o símbolo da ação (ex: AAPL): ",
+    "enter_symbols": "Digite os símbolos separados por vírgula (ex: AAPL,MSFT,GOOGL): ",
+    "enter_amount": "Digite o valor investido em {symbol} (USD): ",
+    "enter_currency_from": "Moeda de origem (ex: USD): ",
+    "enter_currency_to": "Moeda de destino (ex: EUR): ",
+    "press_enter": "Pressione Enter para continuar...",
+    "invalid_option": "Opção inválida! Tente novamente.",
+    "invalid_symbol": "Símbolo inválido ou dados não disponíveis.",
+    "processing": "Processando..."
+  },
+  "market": {
+    "overview": "VISÃO GERAL DO MERCADO",
+    "indices": "Principais Índices",
+    "gainers": "Maiores Altas",
+    "losers": "Maiores Baixas",
+    "most_active": "Mais Negociados",
+    "crypto": "Criptomoedas",
+    "price": "Preço",
+    "change": "Variação",
+    "volume": "Volume",
+    "market_cap": "Market Cap",
+    "loading": "Carregando dados do mercado..."
+  },
+  "stock": {
+    "analysis": "ANÁLISE DE AÇÕES",
+    "real_time_data": "Dados em Tempo Real",
+    "company_info": "Informações da Empresa",
+    "technical_signals": "Sinais Técnicos",
+    "price": "Preço",
+    "change": "Variação",
+    "volume": "Volume",
+    "market_cap": "Market Cap",
+    "pe_ratio": "P/E Ratio",
+    "dividend_yield": "Dividend Yield",
+    "day_range": "Variação do Dia",
+    "year_range": "Variação de 52 Semanas",
+    "sector": "Setor",
+    "industry": "Indústria",
+    "employees": "Funcionários",
+    "fetching_data": "Buscando dados para {symbol}..."
+  },
+  "technical": {
+    "analysis": "ANÁLISE TÉCNICA",
+    "indicators": "Indicadores Técnicos",
+    "signals": "Sinais",
+    "bullish": "ALTA",
+    "bearish": "BAIXA",
+    "neutral": "NEUTRO",
+    "rsi": "RSI (Índice de Força Relativa)",
+    "macd": "MACD",
+    "bollinger": "Bandas de Bollinger",
+    "ma_trend": "Tendência de Médias Móveis",
+    "stochastic": "Estocástico",
+    "williams_r": "Williams %R",
+    "cci": "CCI (Índice de Canal de Commodities)",
+    "atr": "ATR (Average True Range)",
+    "obv": "OBV (On-Balance Volume)",
+    "adx": "ADX (Índice Direcional Médio)"
+  },
+  "portfolio": {
+    "management": "GESTÃO DE PORTFÓLIO",
+    "create": "Criar Portfólio",
+    "analysis": "Análise de Portfólio",
+    "optimization": "Otimização de Portfólio",
+    "performance": "Performance",
+    "risk_metrics": "Métricas de Risco",
+    "allocation": "Alocação",
+    "expected_return": "Retorno Esperado",
+    "volatility": "Volatilidade",
+    "sharpe_ratio": "Índice Sharpe",
+    "max_drawdown": "Drawdown Máximo",
+    "var": "Value at Risk (VaR)",
+    "beta": "Beta",
+    "alpha": "Alpha",
+    "total_value": "Valor Total",
+    "weight": "Peso (%)",
+    "enter_symbols": "Digite os símbolos das ações para o portfólio:",
+    "enter_weights": "Digite os pesos (%) para cada ação:",
+    "optimizing": "Otimizando portfólio..."
+  },
+  "currency": {
+    "converter": "CONVERSOR DE MOEDAS",
+    "exchange_rates": "Taxas de Câmbio",
+    "from": "De",
+    "to": "Para",
+    "rate": "Taxa",
+    "amount": "Valor",
+    "converted": "Convertido",
+    "major_pairs": "Principais Pares",
+    "fetching_rate": "Buscando taxa de câmbio..."
+  },
+  "news": {
+    "market_news": "NOTÍCIAS DO MERCADO",
+    "latest": "Últimas Notícias",
+    "source": "Fonte",
+    "published": "Publicado",
+    "loading": "Carregando notícias...",
+    "no_news": "Nenhuma notícia disponível no momento."
+  },
+  "errors": {
+    "connection": "Erro de conexão. Verifique sua conexão com a internet.",
+    "invalid_symbol": "Símbolo inválido: {symbol}",
+    "no_data": "Dados não disponíveis para {symbol}",
+    "api_error": "Erro na API. Tente novamente mais tarde.",
+    "general": "Ocorreu um erro inesperado: {error}",
+    "portfolio_empty": "Portfólio vazio. Adicione alguns ativos primeiro.",
+    "invalid_weight": "Peso inválido. Use valores entre 0 e 100.",
+    "weights_sum": "A soma dos pesos deve ser 100%."
+  },
+  "success": {
+    "data_loaded": "Dados carregados com sucesso!",
+    "portfolio_created": "Portfólio criado com sucesso!",
+    "language_changed": "Idioma alterado para {language}",
+    "optimization_complete": "Otimização de portfólio concluída!"
+  },
+  "web": {
+    "launching": "Iniciando interface web...",
+    "url": "Acesse: http://localhost:8501",
+    "browser": "O navegador será aberto automaticamente.",
+    "manual": "Se não abrir automaticamente, copie e cole a URL acima no seu navegador."
+  },
+  "units": {
+    "billion": "B",
+    "trillion": "T",
+    "million": "M",
+    "thousand": "K"
+  }
+}

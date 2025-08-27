@@ -1,0 +1,169 @@
+{
+  "app": {
+    "title": "DATASYNC Market Tool",
+    "subtitle": "Financial Market Analysis Tool",
+    "version": "v2.0.0",
+    "developer": "Developed by Guilherme Rosental",
+    "disclaimer": "This tool is for educational purposes only. Not financial advice."
+  },
+  "menu": {
+    "main": {
+      "title": "MAIN MENU",
+      "language": "🌐 Select Language",
+      "market_overview": "📈 Market Overview",
+      "stock_analysis": "📊 Stock Analysis",
+      "portfolio": "💼 Portfolio Management",
+      "technical_analysis": "📉 Technical Analysis",
+      "currency": "💱 Currency Converter",
+      "news": "📰 Market News",
+      "web_interface": "🌐 Web Interface",
+      "exit": "❌ Exit"
+    },
+    "language": {
+      "title": "LANGUAGE SELECTION",
+      "current": "Current language: {language}",
+      "select": "Select a language:",
+      "portuguese": "Português",
+      "english": "English",
+      "spanish": "Español",
+      "back": "Back"
+    },
+    "portfolio": {
+      "title": "PORTFOLIO MANAGEMENT",
+      "create": "📝 Create New Portfolio",
+      "analyze": "📊 Analyze Portfolio",
+      "optimize": "⚡ Optimize Portfolio",
+      "compare": "🔍 Compare Assets",
+      "back": "🔙 Back"
+    }
+  },
+  "input": {
+    "choose_option": "Choose an option: ",
+    "enter_symbol": "Enter stock symbol (e.g. AAPL): ",
+    "enter_symbols": "Enter symbols separated by comma (e.g. AAPL,MSFT,GOOGL): ",
+    "enter_amount": "Enter amount invested in {symbol} (USD): ",
+    "enter_currency_from": "From currency (e.g. USD): ",
+    "enter_currency_to": "To currency (e.g. EUR): ",
+    "press_enter": "Press Enter to continue...",
+    "invalid_option": "Invalid option! Please try again.",
+    "invalid_symbol": "Invalid symbol or data not available.",
+    "processing": "Processing..."
+  },
+  "market": {
+    "overview": "MARKET OVERVIEW",
+    "indices": "Major Indices",
+    "gainers": "Top Gainers",
+    "losers": "Top Losers",
+    "most_active": "Most Active",
+    "crypto": "Cryptocurrencies",
+    "price": "Price",
+    "change": "Change",
+    "volume": "Volume",
+    "market_cap": "Market Cap",
+    "loading": "Loading market data..."
+  },
+  "stock": {
+    "analysis": "STOCK ANALYSIS",
+    "real_time_data": "Real-time Data",
+    "company_info": "Company Information",
+    "technical_signals": "Technical Signals",
+    "price": "Price",
+    "change": "Change",
+    "volume": "Volume",
+    "market_cap": "Market Cap",
+    "pe_ratio": "P/E Ratio",
+    "dividend_yield": "Dividend Yield",
+    "day_range": "Day's Range",
+    "year_range": "52 Week Range",
+    "sector": "Sector",
+    "industry": "Industry",
+    "employees": "Employees",
+    "fetching_data": "Fetching data for {symbol}..."
+  },
+  "technical": {
+    "analysis": "TECHNICAL ANALYSIS",
+    "indicators": "Technical Indicators",
+    "signals": "Signals",
+    "bullish": "BULLISH",
+    "bearish": "BEARISH",
+    "neutral": "NEUTRAL",
+    "rsi": "RSI (Relative Strength Index)",
+    "macd": "MACD",
+    "bollinger": "Bollinger Bands",
+    "ma_trend": "Moving Average Trend",
+    "stochastic": "Stochastic",
+    "williams_r": "Williams %R",
+    "cci": "CCI (Commodity Channel Index)",
+    "atr": "ATR (Average True Range)",
+    "obv": "OBV (On-Balance Volume)",
+    "adx": "ADX (Average Directional Index)"
+  },
+  "portfolio": {
+    "management": "PORTFOLIO MANAGEMENT",
+    "create": "Create Portfolio",
+    "analysis": "Portfolio Analysis",
+    "optimization": "Portfolio Optimization",
+    "performance": "Performance",
+    "risk_metrics": "Risk Metrics",
+    "allocation": "Allocation",
+    "expected_return": "Expected Return",
+    "volatility": "Volatility",
+    "sharpe_ratio": "Sharpe Ratio",
+    "max_drawdown": "Max Drawdown",
+    "var": "Value at Risk (VaR)",
+    "beta": "Beta",
+    "alpha": "Alpha",
+    "total_value": "Total Value",
+    "weight": "Weight (%)",
+    "enter_symbols": "Enter stock symbols for the portfolio:",
+    "enter_weights": "Enter weights (%) for each stock:",
+    "optimizing": "Optimizing portfolio..."
+  },
+  "currency": {
+    "converter": "CURRENCY CONVERTER",
+    "exchange_rates": "Exchange Rates",
+    "from": "From",
+    "to": "To",
+    "rate": "Rate",
+    "amount": "Amount",
+    "converted": "Converted",
+    "major_pairs": "Major Pairs",
+    "fetching_rate": "Fetching exchange rate..."
+  },
+  "news": {
+    "market_news": "MARKET NEWS",
+    "latest": "Latest News",
+    "source": "Source",
+    "published": "Published",
+    "loading": "Loading news...",
+    "no_news": "No news available at the moment."
+  },
+  "errors": {
+    "connection": "Connection error. Please check your internet connection.",
+    "invalid_symbol": "Invalid symbol: {symbol}",
+    "no_data": "No data available for {symbol}",
+    "api_error": "API error. Please try again later.",
+    "general": "An unexpected error occurred: {error}",
+    "portfolio_empty": "Portfolio is empty. Add some assets first.",
+    "invalid_weight": "Invalid weight. Use values between 0 and 100.",
+    "weights_sum": "Sum of weights must be 100%."
+  },
+  "success": {
+    "data_loaded": "Data loaded successfully!",
+    "portfolio_created": "Portfolio created successfully!",
+    "language_changed": "Language changed to {language}",
+    "optimization_complete": "Portfolio optimization completed!"
+  },
+  "web": {
+    "launching": "Launching web interface...",
+    "url": "Access: http://localhost:8501",
+    "browser": "Browser will open automatically.",
+    "manual": "If it doesn't open automatically, copy and paste the URL above into your browser."
+  },
+  "units": {
+    "billion": "B",
+    "trillion": "T",
+    "million": "M",
+    "thousand": "K"
+  }
+}

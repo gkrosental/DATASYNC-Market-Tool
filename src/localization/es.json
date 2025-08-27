@@ -1,0 +1,169 @@
+{
+  "app": {
+    "title": "DATASYNC Market Tool",
+    "subtitle": "Herramienta de Análisis de Mercado Financiero",
+    "version": "v2.0.0",
+    "developer": "Desarrollado por Guilherme Rosental",
+    "disclaimer": "Esta herramienta es solo para fines educativos. No constituye asesoramiento financiero."
+  },
+  "menu": {
+    "main": {
+      "title": "MENÚ PRINCIPAL",
+      "language": "🌐 Seleccionar Idioma",
+      "market_overview": "📈 Visión General del Mercado",
+      "stock_analysis": "📊 Análisis de Acciones",
+      "portfolio": "💼 Gestión de Cartera",
+      "technical_analysis": "📉 Análisis Técnico",
+      "currency": "💱 Conversor de Divisas",
+      "news": "📰 Noticias del Mercado",
+      "web_interface": "🌐 Interfaz Web",
+      "exit": "❌ Salir"
+    },
+    "language": {
+      "title": "SELECCIÓN DE IDIOMA",
+      "current": "Idioma actual: {language}",
+      "select": "Seleccione un idioma:",
+      "portuguese": "Português",
+      "english": "English",
+      "spanish": "Español",
+      "back": "Volver"
+    },
+    "portfolio": {
+      "title": "GESTIÓN DE CARTERA",
+      "create": "📝 Crear Nueva Cartera",
+      "analyze": "📊 Analizar Cartera",
+      "optimize": "⚡ Optimizar Cartera",
+      "compare": "🔍 Comparar Activos",
+      "back": "🔙 Volver"
+    }
+  },
+  "input": {
+    "choose_option": "Elija una opción: ",
+    "enter_symbol": "Ingrese el símbolo de la acción (ej. AAPL): ",
+    "enter_symbols": "Ingrese los símbolos separados por coma (ej. AAPL,MSFT,GOOGL): ",
+    "enter_amount": "Ingrese el monto invertido en {symbol} (USD): ",
+    "enter_currency_from": "Divisa de origen (ej. USD): ",
+    "enter_currency_to": "Divisa de destino (ej. EUR): ",
+    "press_enter": "Presione Enter para continuar...",
+    "invalid_option": "¡Opción inválida! Inténtelo de nuevo.",
+    "invalid_symbol": "Símbolo inválido o datos no disponibles.",
+    "processing": "Procesando..."
+  },
+  "market": {
+    "overview": "VISIÓN GENERAL DEL MERCADO",
+    "indices": "Principales Índices",
+    "gainers": "Mayores Subidas",
+    "losers": "Mayores Bajas",
+    "most_active": "Más Activos",
+    "crypto": "Criptomonedas",
+    "price": "Precio",
+    "change": "Cambio",
+    "volume": "Volumen",
+    "market_cap": "Cap. de Mercado",
+    "loading": "Cargando datos del mercado..."
+  },
+  "stock": {
+    "analysis": "ANÁLISIS DE ACCIONES",
+    "real_time_data": "Datos en Tiempo Real",
+    "company_info": "Información de la Empresa",
+    "technical_signals": "Señales Técnicas",
+    "price": "Precio",
+    "change": "Cambio",
+    "volume": "Volumen",
+    "market_cap": "Cap. de Mercado",
+    "pe_ratio": "Relación P/E",
+    "dividend_yield": "Rendimiento de Dividendos",
+    "day_range": "Rango del Día",
+    "year_range": "Rango de 52 Semanas",
+    "sector": "Sector",
+    "industry": "Industria",
+    "employees": "Empleados",
+    "fetching_data": "Obteniendo datos para {symbol}..."
+  },
+  "technical": {
+    "analysis": "ANÁLISIS TÉCNICO",
+    "indicators": "Indicadores Técnicos",
+    "signals": "Señales",
+    "bullish": "ALCISTA",
+    "bearish": "BAJISTA",
+    "neutral": "NEUTRAL",
+    "rsi": "RSI (Índice de Fuerza Relativa)",
+    "macd": "MACD",
+    "bollinger": "Bandas de Bollinger",
+    "ma_trend": "Tendencia de Medias Móviles",
+    "stochastic": "Estocástico",
+    "williams_r": "Williams %R",
+    "cci": "CCI (Índice de Canal de Materias Primas)",
+    "atr": "ATR (Rango Verdadero Promedio)",
+    "obv": "OBV (Volumen en Balance)",
+    "adx": "ADX (Índice Direccional Promedio)"
+  },
+  "portfolio": {
+    "management": "GESTIÓN DE CARTERA",
+    "create": "Crear Cartera",
+    "analysis": "Análisis de Cartera",
+    "optimization": "Optimización de Cartera",
+    "performance": "Rendimiento",
+    "risk_metrics": "Métricas de Riesgo",
+    "allocation": "Asignación",
+    "expected_return": "Retorno Esperado",
+    "volatility": "Volatilidad",
+    "sharpe_ratio": "Ratio de Sharpe",
+    "max_drawdown": "Drawdown Máximo",
+    "var": "Valor en Riesgo (VaR)",
+    "beta": "Beta",
+    "alpha": "Alpha",
+    "total_value": "Valor Total",
+    "weight": "Peso (%)",
+    "enter_symbols": "Ingrese los símbolos de acciones para la cartera:",
+    "enter_weights": "Ingrese los pesos (%) para cada acción:",
+    "optimizing": "Optimizando cartera..."
+  },
+  "currency": {
+    "converter": "CONVERSOR DE DIVISAS",
+    "exchange_rates": "Tipos de Cambio",
+    "from": "De",
+    "to": "A",
+    "rate": "Tasa",
+    "amount": "Cantidad",
+    "converted": "Convertido",
+    "major_pairs": "Pares Principales",
+    "fetching_rate": "Obteniendo tipo de cambio..."
+  },
+  "news": {
+    "market_news": "NOTICIAS DEL MERCADO",
+    "latest": "Últimas Noticias",
+    "source": "Fuente",
+    "published": "Publicado",
+    "loading": "Cargando noticias...",
+    "no_news": "No hay noticias disponibles en este momento."
+  },
+  "errors": {
+    "connection": "Error de conexión. Verifique su conexión a internet.",
+    "invalid_symbol": "Símbolo inválido: {symbol}",
+    "no_data": "No hay datos disponibles para {symbol}",
+    "api_error": "Error de API. Inténtelo de nuevo más tarde.",
+    "general": "Ocurrió un error inesperado: {error}",
+    "portfolio_empty": "La cartera está vacía. Agregue algunos activos primero.",
+    "invalid_weight": "Peso inválido. Use valores entre 0 y 100.",
+    "weights_sum": "La suma de los pesos debe ser 100%."
+  },
+  "success": {
+    "data_loaded": "¡Datos cargados exitosamente!",
+    "portfolio_created": "¡Cartera creada exitosamente!",
+    "language_changed": "Idioma cambiado a {language}",
+    "optimization_complete": "¡Optimización de cartera completada!"
+  },
+  "web": {
+    "launching": "Iniciando interfaz web...",
+    "url": "Acceda a: http://localhost:8501",
+    "browser": "El navegador se abrirá automáticamente.",
+    "manual": "Si no se abre automáticamente, copie y pegue la URL anterior en su navegador."
+  },
+  "units": {
+    "billion": "B",
+    "trillion": "T",
+    "million": "M",
+    "thousand": "K"
+  }
+}
