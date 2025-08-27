@@ -314,118 +314,77 @@ DATASYNC es una plataforma integral basada en Python para análisis de mercado f
 
 ## 🏗️ **Architecture / Arquitetura / Arquitectura**
 
-<svg width="100%" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="1200" height="500" fill="#2c3e50" rx="15"/>
-  
-  <!-- Title -->
-  <text x="600" y="30" text-anchor="middle" fill="white" font-size="20" font-weight="bold">DATASYNC System Architecture</text>
-  
-  <!-- User Interface Layer -->
-  <g transform="translate(50, 60)">
-    <rect width="1100" height="80" fill="#3498db" stroke="#2980b9" stroke-width="2" rx="10"/>
-    <text x="550" y="25" text-anchor="middle" fill="white" font-size="16" font-weight="bold">User Interface Layer</text>
+### **DATASYNC System Architecture**
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                               🖥️  USER INTERFACE LAYER                                │
+├─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┤
+│  Console        │  Web Interface  │  Multilingual   │  Interactive    │  Language       │
+│  Interface      │  (Streamlit)    │  Support        │  Demo           │  Switcher       │
+│  📱            │  🌐            │  🗣️            │  🎮            │  🔄            │
+└─────────────────┴─────────────────┴─────────────────┴─────────────────┴─────────────────┘
+                                        ↓
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                               ⚙️  BUSINESS LOGIC LAYER                               │
+├──────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────┤
+│  Technical   │  Portfolio   │  Chart       │  Language    │  Utility     │  Config  │
+│  Analyzer    │  Analyzer    │  Manager     │  Manager     │  Helpers     │  Manager │
+│  📊         │  💼         │  📈         │  🌍         │  🔧         │  ⚙️      │
+└──────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────┘
+                                        ↓
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                                🗃️  DATA ACCESS LAYER                                 │
+├─────────────────────┬─────────────────────┬─────────────────────┬─────────────────────┤
+│  Data Provider      │  Yahoo Finance      │  News Provider      │  Cache Manager      │
+│  Manager            │  Client             │  Client             │  System             │
+│  🔌                │  📡                │  📰                │  💾                │
+└─────────────────────┴─────────────────────┴─────────────────────┴─────────────────────┘
+                                        ↓
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                              🌐  EXTERNAL DATA SOURCES                              │
+├──────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────┤
+│  Yahoo       │  RSS News    │  Market Data │  Currency    │  Real-time   │  Third   │
+│  Finance API │  Feeds       │  APIs        │  APIs        │  Streams     │  Party   │
+│  📈         │  📺         │  💹         │  💱         │  ⚡         │  🔗      │
+└──────────────┴──────────────┴──────────────┴──────────────┴──────────────┴──────────┘
+```
+
+### **🔄 Data Flow Architecture**
+
+```mermaid
+graph TD
+    A[👤 User Input] --> B{🌐 Language Selection}
+    B --> C[🖥️ Interface Layer]
+    C --> D[⚙️ Business Logic]
+    D --> E[🗃️ Data Access]
+    E --> F[🌐 External APIs]
+    F --> G[📊 Data Processing]
+    G --> H[📈 Chart Generation]
+    H --> I[🎨 UI Rendering]
+    I --> J[👤 User Output]
     
-    <!-- Console Interface -->
-    <rect x="50" y="35" width="200" height="35" fill="#2980b9" rx="5"/>
-    <text x="150" y="55" text-anchor="middle" fill="white" font-size="12">Console Interface</text>
+    subgraph "🏗️ Core Components"
+        K[📊 Technical Analysis]
+        L[💼 Portfolio Management]
+        M[🌍 Localization]
+        N[📰 News Integration]
+    end
     
-    <!-- Web Interface -->
-    <rect x="300" y="35" width="200" height="35" fill="#2980b9" rx="5"/>
-    <text x="400" y="55" text-anchor="middle" fill="white" font-size="12">Web Interface (Streamlit)</text>
-    
-    <!-- Multilingual Support -->
-    <rect x="550" y="35" width="200" height="35" fill="#2980b9" rx="5"/>
-    <text x="650" y="55" text-anchor="middle" fill="white" font-size="12">Multilingual Support</text>
-    
-    <!-- Demo -->
-    <rect x="800" y="35" width="200" height="35" fill="#2980b9" rx="5"/>
-    <text x="900" y="55" text-anchor="middle" fill="white" font-size="12">Interactive Demo</text>
-  </g>
-  
-  <!-- Business Logic Layer -->
-  <g transform="translate(50, 170)">
-    <rect width="1100" height="80" fill="#27ae60" stroke="#229954" stroke-width="2" rx="10"/>
-    <text x="550" y="25" text-anchor="middle" fill="white" font-size="16" font-weight="bold">Business Logic Layer</text>
-    
-    <!-- Technical Analyzer -->
-    <rect x="50" y="35" width="180" height="35" fill="#229954" rx="5"/>
-    <text x="140" y="55" text-anchor="middle" fill="white" font-size="12">Technical Analyzer</text>
-    
-    <!-- Portfolio Analyzer -->
-    <rect x="260" y="35" width="180" height="35" fill="#229954" rx="5"/>
-    <text x="350" y="55" text-anchor="middle" fill="white" font-size="12">Portfolio Analyzer</text>
-    
-    <!-- Chart Manager -->
-    <rect x="470" y="35" width="180" height="35" fill="#229954" rx="5"/>
-    <text x="560" y="55" text-anchor="middle" fill="white" font-size="12">Chart Manager</text>
-    
-    <!-- Language Manager -->
-    <rect x="680" y="35" width="180" height="35" fill="#229954" rx="5"/>
-    <text x="770" y="55" text-anchor="middle" fill="white" font-size="12">Language Manager</text>
-    
-    <!-- Helpers -->
-    <rect x="890" y="35" width="160" height="35" fill="#229954" rx="5"/>
-    <text x="970" y="55" text-anchor="middle" fill="white" font-size="12">Utility Helpers</text>
-  </g>
-  
-  <!-- Data Access Layer -->
-  <g transform="translate(50, 280)">
-    <rect width="1100" height="80" fill="#e74c3c" stroke="#c0392b" stroke-width="2" rx="10"/>
-    <text x="550" y="25" text-anchor="middle" fill="white" font-size="16" font-weight="bold">Data Access Layer</text>
-    
-    <!-- Data Manager -->
-    <rect x="200" y="35" width="200" height="35" fill="#c0392b" rx="5"/>
-    <text x="300" y="55" text-anchor="middle" fill="white" font-size="12">Data Provider Manager</text>
-    
-    <!-- Yahoo Finance -->
-    <rect x="450" y="35" width="150" height="35" fill="#c0392b" rx="5"/>
-    <text x="525" y="55" text-anchor="middle" fill="white" font-size="12">Yahoo Finance</text>
-    
-    <!-- News Provider -->
-    <rect x="650" y="35" width="150" height="35" fill="#c0392b" rx="5"/>
-    <text x="725" y="55" text-anchor="middle" fill="white" font-size="12">News Provider</text>
-  </g>
-  
-  <!-- External APIs -->
-  <g transform="translate(50, 390)">
-    <rect width="1100" height="80" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" rx="10"/>
-    <text x="550" y="25" text-anchor="middle" fill="white" font-size="16" font-weight="bold">External Data Sources</text>
-    
-    <!-- Yahoo Finance API -->
-    <rect x="100" y="35" width="150" height="35" fill="#8e44ad" rx="5"/>
-    <text x="175" y="55" text-anchor="middle" fill="white" font-size="12">Yahoo Finance API</text>
-    
-    <!-- RSS Feeds -->
-    <rect x="300" y="35" width="150" height="35" fill="#8e44ad" rx="5"/>
-    <text x="375" y="55" text-anchor="middle" fill="white" font-size="12">RSS News Feeds</text>
-    
-    <!-- Market Data -->
-    <rect x="500" y="35" width="150" height="35" fill="#8e44ad" rx="5"/>
-    <text x="575" y="55" text-anchor="middle" fill="white" font-size="12">Market Data APIs</text>
-    
-    <!-- Currency APIs -->
-    <rect x="700" y="35" width="150" height="35" fill="#8e44ad" rx="5"/>
-    <text x="775" y="55" text-anchor="middle" fill="white" font-size="12">Currency APIs</text>
-    
-    <!-- Real-time Data -->
-    <rect x="900" y="35" width="150" height="35" fill="#8e44ad" rx="5"/>
-    <text x="975" y="55" text-anchor="middle" fill="white" font-size="12">Real-time Streams</text>
-  </g>
-  
-  <!-- Arrows showing data flow -->
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
-     refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="white" />
-    </marker>
-  </defs>
-  
-  <!-- Vertical arrows -->
-  <line x1="600" y1="150" x2="600" y2="160" stroke="white" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <line x1="600" y1="260" x2="600" y2="270" stroke="white" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <line x1="600" y1="370" x2="600" y2="380" stroke="white" stroke-width="2" marker-end="url(#arrowhead)"/>
-</svg>
+    D --> K
+    D --> L
+    D --> M
+    D --> N
+```
+
+### **📱 Component Details**
+
+| **Layer** | **Components** | **Responsibilities** |
+|-----------|----------------|----------------------|
+| **🖥️ UI** | Console, Web, Demo | User interaction, display, input handling |
+| **⚙️ Logic** | Analyzers, Managers | Business rules, calculations, processing |
+| **🗃️ Data** | Providers, Clients | Data access, caching, transformation |
+| **🌐 External** | APIs, Feeds | Real-time data, market information |
 
 </div>
 
