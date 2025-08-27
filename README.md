@@ -2,18 +2,20 @@
 
 <div align="center">
 
-<!-- Language Selector -->
-<div id="language-selector">
-  <a href="#pt" onclick="setLanguage('pt')">
-    <img src="https://img.shields.io/badge/🇧🇷-Português-green?style=for-the-badge" alt="Português" />
-  </a>
-  <a href="#en" onclick="setLanguage('en')">
-    <img src="https://img.shields.io/badge/🇺🇸-English-blue?style=for-the-badge" alt="English" />
-  </a>
-  <a href="#es" onclick="setLanguage('es')">
-    <img src="https://img.shields.io/badge/🇪🇸-Español-red?style=for-the-badge" alt="Español" />
-  </a>
+<!-- Language Information -->
+<div align="center">
+  <img src="https://img.shields.io/badge/🇧🇷-Português-green?style=for-the-badge" alt="Português" />
+  <img src="https://img.shields.io/badge/🇺🇸-English-blue?style=for-the-badge" alt="English" />
+  <img src="https://img.shields.io/badge/🇪🇸-Español-red?style=for-the-badge" alt="Español" />
 </div>
+
+<br/>
+
+**🌟 Ferramenta Completa de Análise de Mercado Financeiro**
+<br/>
+**Complete Financial Market Analysis Platform**
+<br/>
+**Plataforma Completa de Análisis de Mercado Financiero**
 
 <!-- Main Banner SVG -->
 <svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
@@ -700,84 +702,7 @@ python test_datasync.py
 
 </div>
 
-<!-- Language Switching JavaScript and CSS -->
-<script>
-function setLanguage(lang) {
-  // Hide all language content
-  const contents = document.querySelectorAll('.language-content');
-  contents.forEach(content => {
-    content.style.display = 'none';
-  });
-  
-  // Show selected language content
-  const selectedContent = document.getElementById(`content-${lang}`);
-  const selectedInstallation = document.getElementById(`installation-${lang}`);
-  const selectedDisclaimer = document.getElementById(`disclaimer-${lang}`);
-  
-  if (selectedContent) selectedContent.style.display = 'block';
-  if (selectedInstallation) selectedInstallation.style.display = 'block';
-  if (selectedDisclaimer) selectedDisclaimer.style.display = 'block';
-  
-  // Update subtitle based on language
-  const subtitles = {
-    'pt': 'Ferramenta Completa de Análise de Mercado Financeiro',
-    'en': 'Complete Financial Market Analysis Platform', 
-    'es': 'Plataforma Completa de Análisis de Mercado Financiero'
-  };
-  
-  const subtitleElements = document.querySelectorAll('.subtitle-text');
-  subtitleElements.forEach(element => {
-    element.textContent = subtitles[lang];
-  });
-  
-  // Update feature text based on language
-  const featureTexts = {
-    'pt': ['Análise de Ações', 'Portfólio', 'Moedas', 'Notícias', 'Técnica'],
-    'en': ['Stock Analysis', 'Portfolio', 'Currency', 'News', 'Technical'],
-    'es': ['Análisis de Acciones', 'Cartera', 'Divisas', 'Noticias', 'Técnico']
-  };
-  
-  const featureElements = document.querySelectorAll('.feature-text');
-  featureElements.forEach((element, index) => {
-    if (featureTexts[lang] && featureTexts[lang][index]) {
-      element.textContent = featureTexts[lang][index];
-    }
-  });
-}
-
-// Set default language to Portuguese
-document.addEventListener('DOMContentLoaded', function() {
-  setLanguage('pt');
-});
-</script>
-
-<style>
-.language-content {
-  transition: opacity 0.3s ease-in-out;
-}
-
-#language-selector a {
-  text-decoration: none;
-  margin: 0 10px;
-  transition: transform 0.2s ease;
-}
-
-#language-selector a:hover {
-  transform: scale(1.05);
-}
-
-svg {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  svg {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+## 🔄 Version History
 
 - **v2.0.0**: Complete refactor with web interface, enhanced analytics, and modern architecture
 - **v1.0.0**: Original console-based market tool
@@ -788,4 +713,8 @@ Contributions are welcome! Please feel free to submit issues, feature requests, 
 
 ---
 
+<div align="center">
+
 **Happy Trading! 📈💰**
+
+</div>
