@@ -686,10 +686,21 @@ python test_datasync.py
 
 <div align="center">
 
-**Happy Trading! 📈💰 | Bons Investimentos! 📈💰 | ¡Feliz Trading! 📈💰**
+## 🎉 **Thank You for Using DATASYNC Market Tool!**
+
+### **Happy Trading! 📈💰 | Bons Investimentos! 📈💰 | ¡Feliz Trading! 📈💰**
+
+---
+
+**Made with ❤️ by the DATASYNC Team**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/gkrosental/DATASYNC-Market-Tool)
+[![Version](https://img.shields.io/badge/Version-2.0.0-green?style=for-the-badge)](https://github.com/gkrosental/DATASYNC-Market-Tool/releases/tag/v2.0.0)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 </div>
 
+<!-- Language Switching JavaScript and CSS -->
 <script>
 function setLanguage(lang) {
   // Hide all language content
@@ -767,159 +778,6 @@ svg {
   }
 }
 </style>
-2. **Install Python dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Test the installation**:
-   ```bash
-   python test_datasync.py
-   ```
-
-## 🖥️ Usage
-
-### Console Interface
-Run the enhanced console application:
-```bash
-python datasync_new.py
-```
-
-### Web Interface (Streamlit)
-Launch the modern web interface:
-```bash
-streamlit run streamlit_launcher.py
-```
-
-### Original Console (Legacy)
-Run the original version:
-```bash
-python datasync.py
-```
-
-## 📁 Project Structure
-
-```
-DATASYNC-Market-Tool/
-├── src/
-│   ├── data_providers/          # Data source providers
-│   │   ├── yahoo_finance.py     # Yahoo Finance integration
-│   │   ├── news_provider.py     # Financial news aggregation
-│   │   └── data_manager.py      # Unified data management
-│   ├── analyzers/               # Analysis engines
-│   │   ├── technical_analyzer.py    # Technical indicators
-│   │   └── portfolio_analyzer.py    # Portfolio analytics
-│   ├── utils/                   # Utility functions
-│   │   ├── helpers.py           # Helper functions
-│   │   └── plotting.py          # Chart generation
-│   └── ui/                      # User interfaces
-│       └── streamlit_app.py     # Web interface
-├── config/
-│   └── settings.py              # Configuration settings
-├── requirements.txt             # Python dependencies
-├── datasync.py                  # Original console app
-├── datasync_new.py             # Enhanced console app
-├── test_datasync.py            # Installation test
-└── streamlit_launcher.py       # Web app launcher
-```
-
-## 🔧 Configuration
-
-The application uses sensible defaults and requires no initial configuration. However, you can customize:
-
-- **API Keys**: For enhanced features, add API keys to `.env` file (copy from `.env.example`)
-- **Data Sources**: Modify `config/settings.py` for custom data sources
-- **Cache Settings**: Adjust cache TTL and size limits
-- **Chart Themes**: Choose from multiple chart themes
-
-## 📊 Technical Indicators
-
-### Trend Indicators
-- **SMA** (Simple Moving Average)
-- **EMA** (Exponential Moving Average)
-- **MACD** (Moving Average Convergence Divergence)
-- **ADX** (Average Directional Index)
-
-### Momentum Indicators
-- **RSI** (Relative Strength Index)
-- **Stochastic Oscillator**
-- **Williams %R**
-- **CCI** (Commodity Channel Index)
-
-### Volatility Indicators
-- **Bollinger Bands**
-- **ATR** (Average True Range)
-
-### Volume Indicators
-- **OBV** (On-Balance Volume)
-
-## 🎯 Portfolio Analytics
-
-- **Modern Portfolio Theory** optimization
-- **Risk-Return Analysis**
-- **Correlation Analysis**
-- **Performance Attribution**
-- **Value at Risk (VaR)** calculations
-- **Monte Carlo Simulations**
-- **Efficient Frontier** generation
-
-## 📈 Supported Markets
-
-- **US Markets**: NYSE, NASDAQ
-- **Brazilian Market**: B3 (Bovespa)
-- **UK Market**: London Stock Exchange
-- **Indian Markets**: BSE, NSE
-- **European Markets**: XETRA
-- **Asian Markets**: Tokyo Stock Exchange
-- **Canadian Market**: TSX
-- **Australian Market**: ASX
-
-## 💱 Supported Currencies
-
-USD, EUR, BRL, GBP, JPY, CAD, AUD, CNY, INR, CHF, KRW, MXN, SGD, HKD
-
-## 📰 News Sources
-
-- Yahoo Finance
-- MarketWatch
-- Reuters Business
-- Bloomberg Markets
-- CNBC Markets
-
-## 🔒 Data Sources
-
-- **Primary**: Yahoo Finance (yfinance library)
-- **News**: Multiple RSS feeds from major financial news outlets
-- **Real-time Data**: Live market data via Yahoo Finance API
-- **Historical Data**: Up to 10+ years of historical data
-
-## ⚡ Performance Features
-
-- **Data Caching**: Intelligent caching system for faster data access
-- **Async Support**: Asynchronous data fetching for improved performance
-- **Background Updates**: Real-time data updates in web interface
-- **Optimized Charts**: Interactive Plotly charts for smooth user experience
-
-## 🚨 Disclaimer
-
-**This tool is for educational and informational purposes only. It is not financial advice.**
-
-- Always consult with a qualified financial advisor before making investment decisions
-- Past performance does not guarantee future results
-- All investments carry risk of loss
-- The developers are not responsible for any financial losses
-
-## 👨‍💻 Developer
-
-**Guilherme Rosental**
-- Educational project for learning Python and financial analysis
-- Open source contribution to the financial analysis community
-
-## 📝 License
-
-This project is open source. See LICENSE file for details.
-
-## 🔄 Version History
 
 - **v2.0.0**: Complete refactor with web interface, enhanced analytics, and modern architecture
 - **v1.0.0**: Original console-based market tool
